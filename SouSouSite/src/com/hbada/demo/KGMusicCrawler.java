@@ -15,7 +15,7 @@ import com.alibaba.fastjson.JSONObject;
 public class KGMusicCrawler {
 	
 	
-	private static int count = 1;
+	//private static int count = 1;
 	
 	public static void main(String[] args) {
 		String page = "1"; 		//下载的页数，每页20，不太可能超过2000首吧
