@@ -67,6 +67,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <script type="text/javascript">
 var title = "${songname}";
 var album = "${songname}";
+var url = "${url}";
 </script>
 <script src="js/jqueryhtml5music/js/jquery-ui-1.8.17.custom.min.js"></script>
 <script src="js/jqueryhtml5music/js/script.js"></script>

@@ -10,7 +10,7 @@
 				artist: '',
 				album: album,
 				cover:'js/jqueryhtml5music/img/cd.jpg',
-				mp3: 'http://dl.stream.qqmusic.qq.com/C4000015LXMp0iY4sc.m4a?vkey=AE6E28E72EA875060EC67DD1B9145189BDD8D71FC23F2B53BD0E6213B9E8715133987316364F531C8C64869DDBB2707AC3651AB4D384739C&guid=6612300644&uin=0&fromtag=66',
+				mp3: url,
 				ogg: ''
 			}
 			];
