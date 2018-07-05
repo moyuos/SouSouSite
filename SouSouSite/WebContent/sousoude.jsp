@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="souico.ico" type="image/x-icon" />
 	<meta name="viewport" content="width=device-width,inital-scale=1.0,minimum-scale=0.5,maximum-scale=2.0,user-scalable=no">
     <meta charset="utf-8"></meta>
+    <script type="text/javascript" src="js/sousoude.js"></script>
     <script type="text/javascript">
     
     function souyixia(p){
@@ -70,11 +71,11 @@
   			<div id="gonggao" style="display:block;width:20%;height:100%;float:right;margin:auto;font-family:微软雅黑">
   			<img style="width:30px;height:30px;float:left;" src="image/tongzhi.png" />&nbsp;&nbsp;
   			<marquee style="width:120px;height:60px;" scrollamount="2" direction="up" onmouseover="this.stop()" onmouseout="this.start()">
-  			<a href="http://www.mm131.com/xinggan/2296.html"><span style="color:red;">1</span>.大鱼出品,要啥精P..(福利)</a><br><br>
+  			<a href="http://www.mm131.com/xinggan/2296.html" target="_blank"><span style="color:red;">1</span>.大鱼出品,要啥精P..(福利)</a><br><br>
   			<a href="javascript:void(0)" onclick="document.getElementById('iq').src='image/gongzhonghao.jpg'">2.关注我？</a><br><br>
-  			<a href="http://www.81.cn/sydbt/2017-12/31/content_7890541.htm">3.让世界更加美好.</a><br><br>
+  			<a href="http://www.81.cn/sydbt/2017-12/31/content_7890541.htm" target='_blank'>3.让世界更加美好.</a><br><br>
   			</marquee>
-  			<img style="cursor:pointer;" title="关注我" id="iq" width="70px" height="70px" src="image/yan.gif" onclick="document.getElementById('iq').src='gongzhonghao.jpg'"/>
+  			<img style="cursor:pointer;" title="关注我" id="iq" width="70px" height="70px" src="image/yan.gif" onclick="wx(this)"/>
   			</div>
 			<script type="text/javascript">
 			if(system.win||system.mac||system.xll){//如果是电脑
@@ -93,7 +94,7 @@
   			<div id="souyixia2" style="width:80%;height:35px;border:0px solid blue;background-color:rgb(51,136,255)">
   			<form id="myform" name="myform" action="SouSouMusic" method="post">
   			<input id="searchname" value="${w}" type="text" style="width:74%;height:30px;" name="searchname" placeholder="请输入歌曲名或歌手名...beyond、灰色头像.."/>
-  			<div id="clicksouyixia" onclick="souyixia(1)" style="cursor:pointer;letter-spacing:8px;line-height:30px;color:white;align:center;height:32px;width:19%;font-size:20px;float:right;background-color:rgb(51,136,255)">
+  			<div id="clicksouyixia" onclick="souyixia(1)" style="cursor:pointer;letter-spacing:8px;line-height:30px;color:white;align:center;height:35px;width:19%;font-size:20px;float:right;background-color:rgb(51,136,255)">
   			嗖一下
   			</div>
   			<input id="page" name="page" type="hidden" value="1"/>
@@ -108,12 +109,14 @@
     <tr height="30px;" style="color:rgb(153,153,153);font-size:15px;"><td width="40%" align="center">歌曲</td><td width="30%">歌手</td><td width="30%">&nbsp;&nbsp;专辑</td></tr>
     <c:forEach var="music" items="${listMusic }" >
     <tr>
-    	<td align="center" width="40%"><img width="20px;" height="20px;" src="image/music.png" style="margin-right:5px;"/>
+    	<td align="center" width="40%">
+    		<!-- <img width="20px;" height="20px;" src="image/music.png" style="margin-right:5px;"/> -->
     		<c:url value="PlayerServlet" var="musicurl">
             	<c:param name="url" value="${music.musicUrl}"></c:param>
 				<c:param name="songname" value="${music.musicName}"></c:param>
         	</c:url>
-        	<a href="${musicurl}" target="_blank">${music.musicName }</a>
+        	<a href="${musicurl}" target="_blank">${music.musicName }</a>&nbsp;&nbsp;
+        	<a href="${music.musicUrl}" download="music"><img alt="下载" title="下载" style="width:13px;height:13px" src="image/download.png"></a>
     	</td>
     	<td width="30%">${music.musicSinger }</td>
     	<td width="30%">《${music.musicHilight }》</td>

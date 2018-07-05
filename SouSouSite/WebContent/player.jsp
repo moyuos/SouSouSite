@@ -22,12 +22,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-	 <%-- <h5>${songname}</h5>
+	 <h5>${songname}</h5>
      <audio id="audio" autoplay loop controls style="display:block;margin-top:0px;position:relative;z-index: 1;width:100%;"><source src="${url}" type="audio/mp4"></audio>
   	 <br/>
-  	 <a href="${url }" download="${songname }">下载</a>  --%>
+  	 <a href="${url }" download="${songname }">下载</a>  
   	 
-<div id="background">
+<!-- <div id="background">
 <div id="player">
 	<div class="cover"></div>
 	<div class="ctrl">
@@ -82,6 +82,6 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
-</div>
+</div> -->
   </body>
 </html>
