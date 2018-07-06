@@ -116,7 +116,7 @@
 				<c:param name="songname" value="${music.musicName}"></c:param>
         	</c:url>
         	<a href="${musicurl}" target="_blank">${music.musicName }</a>&nbsp;&nbsp;
-        	<a href="${music.musicUrl}" download="music"><img alt="下载" title="下载" style="width:13px;height:13px" src="image/download.png"></a>
+        	<a href="music/1.m4a" download="music"><img alt="下载" title="下载" style="width:13px;height:13px" src="image/download.png"></a>
     	</td>
     	<td width="30%">${music.musicSinger }</td>
     	<td width="30%">《${music.musicHilight }》</td>
