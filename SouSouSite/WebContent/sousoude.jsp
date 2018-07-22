@@ -137,9 +137,7 @@
     </c:if>
 	<script type="text/javascript">
 			if(system.win||system.mac||system.xll){//如果是电脑
-				//
 			}else{
-				
 				document.getElementById("souyixia").style.width="100%";
 				document.getElementById("souyixia2").style.width="100%";
 				document.getElementById("souyixia").style.marginTop="10px";
@@ -147,11 +145,6 @@
 				document.getElementById("searchname").style.width="68%";
 				document.getElementById("clicksouyixia").style.width="20%";
 				document.getElementById("clicksouyixia").innerHTML="嗖";
-				//document.getElementById("audio").style.width="35%";
-				
-				
-				//document.getElementById("songname").style.display="none";
-				//document.getElementById("songurl").style.width="100%";
 			}
 	</script>
     
